@@ -1,0 +1,22 @@
+### Fetching all Resources
+GET http://localhost:3001/api/notes
+Accept: application/json
+
+### Fetching Single Resource
+GET http://localhost:3001/api/notes/1
+Accept: application/json
+
+### Delete Single Resource
+DELETE http://localhost:3001/api/notes/1
+Accept: application/json
+
+### Add Single Resouce
+POST http://localhost:3001/api/notes
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "sample",
+  "time": "Wed, 21 Oct 2015 18:27:50 GMT",
+  "content": "content is filled"
+}
