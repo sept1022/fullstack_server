@@ -1,0 +1,29 @@
+### Fetching info
+GET http://localhost:3001/info
+Accept: application/json
+
+### Fetching all Resources
+GET http://localhost:3001/api/person
+Accept: application/json
+
+### Fetching Single Resource
+GET http://localhost:3001/api/person/1
+Accept: application/json
+
+### Delete Single Resource
+DELETE http://localhost:3001/api/person/1
+Accept: application/json
+
+### Add Single Resouce
+POST http://localhost:3001/api/person
+Accept: application/json
+Content-Type: application/json
+
+### Fetching Wrong URL
+GET http://localhost:3001/infos
+Accept: application/json
+
+{
+  "name": "sample",
+  "number": "12345678"
+}

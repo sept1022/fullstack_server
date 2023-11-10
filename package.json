@@ -2,17 +2,22 @@
   "name": "fullstack_server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "person_index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "notes_start": "node notes_index.js",
+    "notes_dev": "nodemon notes_index.js",
+    "phonebook_start": "node phonebook_index.js",
+    "phonebook_dev": "nodemon phonebook_index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "notenv": "^2.0.3",
     "prettier": "^3.0.3"
   },
   "devDependencies": {
