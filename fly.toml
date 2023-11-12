@@ -1,0 +1,20 @@
+# fly.toml app configuration file generated for fullstack-server on 2023-11-12T14:59:03+09:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "fullstack-server"
+primary_region = "sin"
+
+[build]
+
+[env]
+  HOSTNAME = "127.0.0.1"
+
+[http_service]
+  internal_port = 3001
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]

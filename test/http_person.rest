@@ -7,7 +7,7 @@ GET http://localhost:3001/api/person
 Accept: application/json
 
 ### Fetching Single Resource
-GET http://localhost:3001/api/person/1
+GET http://localhost:3001/api/person/655044f1879c9890ffe3af87
 Accept: application/json
 
 ### Delete Single Resource
@@ -15,15 +15,17 @@ DELETE http://localhost:3001/api/person/1
 Accept: application/json
 
 ### Add Single Resouce
-POST http://localhost:3001/api/person
+POST http://localhost:3001/api/persons
 Accept: application/json
 Content-Type: application/json
 
-### Fetching Wrong URL
-GET http://localhost:3001/infos
-Accept: application/json
-
 {
   "name": "sample",
-  "number": "12345678"
+  "number": "1234567890"
 }
+
+### Fetching Wrong URL
+GET http://localhost:3001/api/person/wrong
+Accept: application/json
+
+

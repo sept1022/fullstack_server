@@ -3,11 +3,15 @@ GET http://localhost:3001/api/notes
 Accept: application/json
 
 ### Fetching Single Resource
-GET http://localhost:3001/api/notes/1
+GET http://localhost:3001/api/notes/655021c18108af0d05acdafb
+Accept: application/json
+
+### Fetghin Wrong Single Resource
+GET http://localhost:3001/api/notes/wrong
 Accept: application/json
 
 ### Delete Single Resource
-DELETE http://localhost:3001/api/notes/1
+DELETE http://localhost:3001/api/notes/6550468fdc61b28bfc1b21eb
 Accept: application/json
 
 ### Add Single Resouce
@@ -16,7 +20,16 @@ Accept: application/json
 Content-Type: application/json
 
 {
-  "name": "sample",
-  "time": "Wed, 21 Oct 2015 18:27:50 GMT",
+  "important": false,
   "content": "content is filled"
+}
+
+### Add Single Resouce (Neg - short content)
+POST http://localhost:3001/api/notes
+Accept: application/json
+Content-Type: application/json
+
+{
+  "important": false,
+  "content": "yes"
 }
